@@ -1,9 +1,9 @@
 # NHL Shots on Goal Predictions
 ## 2025-12-12
 
-*Generated: 2025-12-12 19:37:45*
+*Generated: 2025-12-12 20:12:26*
 
-*Injury data loaded: 223 players on injury report*
+*Injury data loaded: 133 players on injury report*
 
 ---
 
@@ -21,7 +21,6 @@
 | Dylan Holloway | L | STL | 2.22 | 2.27 | Volatile | 66% | 44% |  |
 | Jake Neighbours | L | STL | 1.66 | 1.47 | Volatile | 56% | 21% |  |
 | Pavel Buchnevich | L | STL | 1.50 | 1.47 | Volatile | 50% | 19% |  |
-| Jordan Kyrou | R | STL | 2.18 | 2.60 | Volatile | 66% | 42% | **DTD** |
 | Ilya Mikheyev | R | CHI | 1.83 | 1.73 | Volatile | 60% | 30% |  |
 | Artyom Levshunov | D | CHI | 1.69 | 1.67 | Volatile | 56% | 24% |  |
 | Justin Faulk | D | STL | 1.61 | 1.93 | Volatile | 54% | 21% |  |
@@ -32,8 +31,7 @@
 | Player | Pos | Team | Exp SOG | Hist Avg | Variance | P(2+) | P(3+) | Status |
 |--------|-----|------|---------|----------|----------|-------|-------|--------|
 | Barrett Hayton | C | UTA | 1.88 | 1.93 | Volatile | 58% | 38% |  |
-| Logan Cooley | C | UTA | 1.79 | 2.07 | Volatile | 57% | 32% |  |
-| Jared McCann | L | SEA | 1.74 | 2.45 | Volatile | 57% | 30% |  |
+| Jared McCann | L | SEA | 1.74 | 2.45 | Volatile | 57% | 30% | **DTD** |
 | Dylan Guenther | R | UTA | 2.51 | 3.07 | Volatile | 74% | 50% |  |
 | Clayton Keller | R | UTA | 2.30 | 2.87 | Volatile | 66% | 46% |  |
 | JJ Peterka | R | UTA | 1.86 | 2.07 | Volatile | 58% | 35% |  |
@@ -53,16 +51,16 @@
 | 3 | Clayton Keller | UTA | vs SEA | 2.30 | 2.87 | Volatile | 66% |  |
 | 4 | Tyler Bertuzzi | CHI | @ STL | 2.29 | 2.47 | Variable | 72% |  |
 | 5 | Dylan Holloway | STL | vs CHI | 2.22 | 2.27 | Volatile | 66% |  |
-| 6 | Jordan Kyrou | STL | vs CHI | 2.18 | 2.60 | Volatile | 66% | **DTD** |
-| 7 | Mikhail Sergachev | UTA | vs SEA | 1.99 | 2.47 | Volatile | 63% |  |
-| 8 | Brandon Montour | SEA | @ UTA | 1.89 | 2.53 | Volatile | 59% |  |
-| 9 | Barrett Hayton | UTA | vs SEA | 1.88 | 1.93 | Volatile | 58% |  |
-| 10 | JJ Peterka | UTA | vs SEA | 1.86 | 2.07 | Volatile | 58% |  |
-| 11 | Frank Nazar | CHI | @ STL | 1.84 | 1.87 | Volatile | 60% |  |
-| 12 | Ryan Greene | CHI | @ STL | 1.84 | 1.80 | Volatile | 59% |  |
-| 13 | Ilya Mikheyev | CHI | @ STL | 1.83 | 1.73 | Volatile | 60% |  |
-| 14 | Ryan Donato | CHI | @ STL | 1.80 | 1.73 | Volatile | 59% |  |
-| 15 | Logan Cooley | UTA | vs SEA | 1.79 | 2.07 | Volatile | 57% |  |
+| 6 | Mikhail Sergachev | UTA | vs SEA | 1.99 | 2.47 | Volatile | 63% |  |
+| 7 | Brandon Montour | SEA | @ UTA | 1.89 | 2.53 | Volatile | 59% |  |
+| 8 | Barrett Hayton | UTA | vs SEA | 1.88 | 1.93 | Volatile | 58% |  |
+| 9 | JJ Peterka | UTA | vs SEA | 1.86 | 2.07 | Volatile | 58% |  |
+| 10 | Frank Nazar | CHI | @ STL | 1.84 | 1.87 | Volatile | 60% |  |
+| 11 | Ryan Greene | CHI | @ STL | 1.84 | 1.80 | Volatile | 59% |  |
+| 12 | Ilya Mikheyev | CHI | @ STL | 1.83 | 1.73 | Volatile | 60% |  |
+| 13 | Ryan Donato | CHI | @ STL | 1.80 | 1.73 | Volatile | 59% |  |
+| 14 | Jordan Eberle | SEA | @ UTA | 1.79 | 2.53 | Volatile | 58% |  |
+| 15 | Jared McCann | SEA | @ UTA | 1.74 | 2.45 | Volatile | 57% | **DTD** |
 
 ---
 
@@ -82,14 +80,19 @@
 
 | Player | Team | Position | Status | Historical Avg |
 |--------|------|----------|--------|----------------|
+| Torey Krug | STL | ? | **OUT** | 0.00 |
+| Alexey Toropchenko | STL | ? | **OUT** | 0.00 |
 | Jimmy Snuggerud | STL | ? | **OUT** | 0.00 |
-| Snuggerud has undergone wrist surgery and been placed on | STL | ? | **OUT** | 0.00 |
+| Jordan Kyrou | STL | ? | **OUT** | 0.00 |
 | Laurent Brossoit | CHI | ? | **OUT** | 0.00 |
-| Chicago has retained one of the | CHI | ? | **OUT** | 0.00 |
+| Nick Foligno | CHI | ? | **OUT** | 0.00 |
 | Alex Kerfoot | UTA | ? | **OUT** | 0.00 |
 | Juuso Valimaki | UTA | ? | **OUT** | 0.00 |
-| Valimaki underwent successful surgery to repa | UTA | ? | **OUT** | 0.00 |
+| Olli Maatta | UTA | ? | **OUT** | 0.00 |
+| Logan Cooley | UTA | ? | **OUT** | 0.00 |
 | Jaden Schwartz | SEA | ? | **OUT** | 0.00 |
+| Matt Murray | SEA | ? | **OUT** | 0.00 |
+| Berkly Catton | SEA | ? | **OUT** | 0.00 |
 
 ---
 
