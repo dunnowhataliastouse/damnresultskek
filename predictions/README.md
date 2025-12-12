@@ -1,7 +1,9 @@
 # NHL Shots on Goal Predictions
 ## 2025-12-12
 
-*Generated: 2025-12-12 19:22:36*
+*Generated: 2025-12-12 19:37:45*
+
+*Injury data loaded: 223 players on injury report*
 
 ---
 
@@ -19,7 +21,7 @@
 | Dylan Holloway | L | STL | 2.22 | 2.27 | Volatile | 66% | 44% |  |
 | Jake Neighbours | L | STL | 1.66 | 1.47 | Volatile | 56% | 21% |  |
 | Pavel Buchnevich | L | STL | 1.50 | 1.47 | Volatile | 50% | 19% |  |
-| Jordan Kyrou | R | STL | 2.18 | 2.60 | Volatile | 66% | 42% |  |
+| Jordan Kyrou | R | STL | 2.18 | 2.60 | Volatile | 66% | 42% | **DTD** |
 | Ilya Mikheyev | R | CHI | 1.83 | 1.73 | Volatile | 60% | 30% |  |
 | Artyom Levshunov | D | CHI | 1.69 | 1.67 | Volatile | 56% | 24% |  |
 | Justin Faulk | D | STL | 1.61 | 1.93 | Volatile | 54% | 21% |  |
@@ -32,7 +34,6 @@
 | Barrett Hayton | C | UTA | 1.88 | 1.93 | Volatile | 58% | 38% |  |
 | Logan Cooley | C | UTA | 1.79 | 2.07 | Volatile | 57% | 32% |  |
 | Jared McCann | L | SEA | 1.74 | 2.45 | Volatile | 57% | 30% |  |
-| Jaden Schwartz | L | SEA | 1.59 | 2.20 | Volatile | 53% | 25% |  |
 | Dylan Guenther | R | UTA | 2.51 | 3.07 | Volatile | 74% | 50% |  |
 | Clayton Keller | R | UTA | 2.30 | 2.87 | Volatile | 66% | 46% |  |
 | JJ Peterka | R | UTA | 1.86 | 2.07 | Volatile | 58% | 35% |  |
@@ -52,7 +53,7 @@
 | 3 | Clayton Keller | UTA | vs SEA | 2.30 | 2.87 | Volatile | 66% |  |
 | 4 | Tyler Bertuzzi | CHI | @ STL | 2.29 | 2.47 | Variable | 72% |  |
 | 5 | Dylan Holloway | STL | vs CHI | 2.22 | 2.27 | Volatile | 66% |  |
-| 6 | Jordan Kyrou | STL | vs CHI | 2.18 | 2.60 | Volatile | 66% |  |
+| 6 | Jordan Kyrou | STL | vs CHI | 2.18 | 2.60 | Volatile | 66% | **DTD** |
 | 7 | Mikhail Sergachev | UTA | vs SEA | 1.99 | 2.47 | Volatile | 63% |  |
 | 8 | Brandon Montour | SEA | @ UTA | 1.89 | 2.53 | Volatile | 59% |  |
 | 9 | Barrett Hayton | UTA | vs SEA | 1.88 | 1.93 | Volatile | 58% |  |
@@ -72,6 +73,23 @@
 | Connor Bedard | CHI | 2.99 | 3.40 | Volatile | 79% |  |
 | Dylan Guenther | UTA | 2.51 | 3.07 | Volatile | 74% |  |
 | Tyler Bertuzzi | CHI | 2.29 | 2.47 | Variable | 72% |  |
+
+---
+
+## Injured Players (Excluded from Predictions)
+
+*These players are OUT and excluded from active predictions:*
+
+| Player | Team | Position | Status | Historical Avg |
+|--------|------|----------|--------|----------------|
+| Jimmy Snuggerud | STL | ? | **OUT** | 0.00 |
+| Snuggerud has undergone wrist surgery and been placed on | STL | ? | **OUT** | 0.00 |
+| Laurent Brossoit | CHI | ? | **OUT** | 0.00 |
+| Chicago has retained one of the | CHI | ? | **OUT** | 0.00 |
+| Alex Kerfoot | UTA | ? | **OUT** | 0.00 |
+| Juuso Valimaki | UTA | ? | **OUT** | 0.00 |
+| Valimaki underwent successful surgery to repa | UTA | ? | **OUT** | 0.00 |
+| Jaden Schwartz | SEA | ? | **OUT** | 0.00 |
 
 ---
 
