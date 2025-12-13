@@ -1,0 +1,90 @@
+{
+  "source": "ladbrokes",
+  "game_date": "2025-12-13",
+  "away_team": "LAK",
+  "home_team": "CGY",
+  "matchup": "LAK @ CGY",
+  "extracted_at": "2025-12-13T07:59:45.500Z",
+  "game_url": "https://www.ladbrokes.com.au/sports/ice-hockey/usa/nhl/los-angeles-kings-vs-calgary-flames/6ce8984b-52b5-4c80-b8ef-78d607f59655",
+  "player_count": 13,
+  "players": [
+    {
+      "player": "Anze Kopitar",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Blake Coleman",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Brandt Clarke",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Mackenzie Weegar",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Quinton Byfield",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Trevor Moore",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Warren Foegele",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Adrian Kempe",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Alex Laferriere",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Kevin Fiala",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Matt Coronato",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Nazem Kadri",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Rasmus Andersson",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "source": "ladbrokes",
+  "game_date": "2025-12-13",
+  "away_team": "COL",
+  "home_team": "NSH",
+  "matchup": "COL @ NSH",
+  "extracted_at": "2025-12-13T07:59:19.646Z",
+  "game_url": "https://www.ladbrokes.com.au/sports/ice-hockey/usa/nhl/colorado-avalanche-vs-nashville-predators/06c96b5d-5350-4530-8776-432aa4370939",
+  "player_count": 15,
+  "players": [
+    {
+      "player": "Brent Burns",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Brock Nelson",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Devon Toews",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Jonathan Marchessault",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Luke Evangelista",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Ross Colton",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Steven Stamkos",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Valeri Nichushkin",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Artturi Lehkonen",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Cale Makar",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Filip Forsberg",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Gabriel Landeskog",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Martin Necas",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Roman Josi",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Nathan MacKinnon",
+      "line": 4.5,
+      "over_odds": null,
+      "under_odds": null
+    }
+  ]
+}
