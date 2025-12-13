@@ -1,0 +1,96 @@
+{
+  "source": "ladbrokes",
+  "game_date": "2025-12-13",
+  "away_team": "DAL",
+  "home_team": "FLA",
+  "matchup": "DAL @ FLA",
+  "extracted_at": "2025-12-13T07:29:43.703Z",
+  "game_url": "https://www.ladbrokes.com.au/sports/ice-hockey/usa/nhl/dallas-stars-vs-florida-panthers/8bc9cb1e-b7da-4446-aa98-00df8d14b6a3",
+  "player_count": 14,
+  "players": [
+    {
+      "player": "Anton Lundell",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Evan Rodrigues",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Jamie Benn",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Mackie Samoskevich",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Miro Heiskanen",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Seth Jones",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Thomas Harley",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Brad Marchand",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Carter Verhaeghe",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Mikko Rantanen",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Sam Bennett",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Sam Reinhart",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Wyatt Johnston",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Jason Robertson",
+      "line": 3.5,
+      "over_odds": null,
+      "under_odds": null
+    }
+  ]
+}
