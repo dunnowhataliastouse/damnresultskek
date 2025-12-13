@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+.env
+.env.*
+*.db
+
+# Scripts and tools (keep out of repo - only results matter)
+*.py
+!predictions/*.py
+
+# Cache files
+injuries_cache.json
+nul
+
+# IDE
+.vscode/
+.idea/
+.claude/
+
+# Temp files
+*.tmp
+*.log
+
+# Ladbrokes extraction tools
+Ladbrokes/*.js
+Ladbrokes/*.py

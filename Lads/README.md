@@ -1,7 +1,7 @@
 # NHL Shots on Goal Predictions (Ladbrokes Filtered)
 ## 2025-12-13
 
-*Generated: 2025-12-13 17:36:12*
+*Generated: 2025-12-13 17:40:23*
 
 *Only showing players with Ladbrokes SOG markets*
 
