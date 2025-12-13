@@ -1,0 +1,72 @@
+{
+  "source": "ladbrokes",
+  "game_date": "2025-12-13",
+  "away_team": "CHI",
+  "home_team": "DET",
+  "matchup": "CHI @ DET",
+  "extracted_at": "2025-12-13T07:52:34.732Z",
+  "game_url": "https://www.ladbrokes.com.au/sports/ice-hockey/usa/nhl/chicago-blackhawks-vs-detroit-red-wings/5b678724-3bdb-4c4d-8424-19501f7fea83",
+  "player_count": 10,
+  "players": [
+    {
+      "player": "Frank Nazar",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Ilya Mikheyev",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Ryan Donato",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Ryan Greene",
+      "line": 1.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Alex Debrincat",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Dylan Larkin",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Lucas Raymond",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Moritz Seider",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Patrick Kane",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    },
+    {
+      "player": "Tyler Bertuzzi",
+      "line": 2.5,
+      "over_odds": null,
+      "under_odds": null
+    }
+  ]
+}
