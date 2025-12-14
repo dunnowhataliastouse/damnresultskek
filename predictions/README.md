@@ -1,7 +1,7 @@
 # NHL Shots on Goal Predictions
 ## --threshold
 
-*Generated: 2025-12-14 19:44:16*
+*Generated: 2025-12-14 19:49:13*
 
 *Injury data loaded: 129 players on injury report*
 
