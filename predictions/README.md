@@ -1,117 +1,109 @@
 # NHL Shots on Goal Predictions
-## 2025-12-14
+## 2025-12-15
 
-*Generated: 2025-12-14 19:51:33*
+*Generated: 2025-12-15 20:21:53*
 
-*Injury data loaded: 129 players on injury report*
+*Injury data loaded: 128 players on injury report*
 
 ---
 
-### PHI @ CAR
+### LAK @ DAL
 
 | Player | Pos | Team | Exp SOG | Hist Avg | Variance | P(2+) | P(3+) | Status |
 |--------|-----|------|---------|----------|----------|-------|-------|--------|
-| Seth Jarvis | C | CAR | 2.38 | 3.07 | Volatile | 67% | 48% |  |
-| Logan Stankoven | C | CAR | 2.09 | 2.60 | Volatile | 64% | 40% |  |
-| Trevor Zegras | C | PHI | 1.89 | 3.00 | Volatile | 58% | 38% |  |
-| Sebastian Aho | C | CAR | 1.84 | 2.47 | Volatile | 57% | 37% |  |
-| Jordan Staal | C | CAR | 1.59 | 1.93 | Volatile | 53% | 24% |  |
-| Nikolaj Ehlers | L | CAR | 2.18 | 2.33 | Volatile | 65% | 43% |  |
-| Andrei Svechnikov | R | CAR | 2.07 | 2.87 | Volatile | 65% | 39% |  |
-| Travis Konecny | R | PHI | 1.57 | 1.93 | Volatile | 52% | 31% |  |
-| Jackson Blake | R | CAR | 1.52 | 1.73 | Volatile | 50% | 31% |  |
-| Sean Walker | D | CAR | 1.58 | 2.20 | Volatile | 52% | 24% |  |
+| Anze Kopitar | C | LAK | 1.56 | 1.73 | Volatile | 52% | 21% |  |
+| Wyatt Johnston | C | DAL | 1.51 | 2.20 | Volatile | 50% | 29% |  |
+| Jason Robertson | L | DAL | 2.45 | 3.53 | Volatile | 70% | 49% |  |
+| Kevin Fiala | L | LAK | 2.25 | 2.67 | Volatile | 66% | 44% |  |
+| Trevor Moore | L | LAK | 1.69 | 1.87 | Volatile | 56% | 26% |  |
+| Adrian Kempe | R | LAK | 2.30 | 2.93 | Lower* | 74% | 43% |  |
+| Quinton Byfield | R | LAK | 1.72 | 2.13 | Volatile | 55% | 34% |  |
+| Alex Laferriere | R | LAK | 1.72 | 2.07 | Volatile | 57% | 27% |  |
+| Mikko Rantanen | R | DAL | 1.69 | 2.33 | Volatile | 56% | 27% |  |
+| Miro Heiskanen | D | DAL | 1.58 | 2.20 | Volatile | 53% | 20% |  |
 
-### BOS @ MIN
-
-| Player | Pos | Team | Exp SOG | Hist Avg | Variance | P(2+) | P(3+) | Status |
-|--------|-----|------|---------|----------|----------|-------|-------|--------|
-| Joel Eriksson Ek | C | MIN | 3.02 | 3.07 | Variable | 87% | 65% |  |
-| Morgan Geekie | C | BOS | 2.48 | 2.80 | Volatile | 72% | 50% |  |
-| Pavel Zacha | C | BOS | 1.86 | 1.73 | Volatile | 59% | 34% |  |
-| Yakov Trenin | C | MIN | 1.71 | 1.47 | Volatile | 57% | 26% |  |
-| Sean Kuraly | C | BOS | 1.62 | 1.53 | Volatile | 54% | 22% |  |
-| Matt Boldy | L | MIN | 3.21 | 3.40 | Variable | 86% | 67% |  |
-| Kirill Kaprizov | L | MIN | 3.08 | 3.47 | Volatile | 78% | 61% |  |
-| Viktor Arvidsson | L | BOS | 2.71 | 2.93 | Variable | 81% | 56% | **DTD** |
-| Marcus Johansson | L | MIN | 1.61 | 1.40 | Volatile | 54% | 18% |  |
-| David Pastrnak | R | BOS | 3.36 | 3.67 | Variable | 83% | 67% |  |
-| Vladimir Tarasenko | R | MIN | 2.02 | 2.07 | Volatile | 65% | 36% |  |
-| Brock Faber | D | MIN | 1.91 | 2.07 | Volatile | 62% | 34% |  |
-| Hampus Lindholm | D | BOS | 1.55 | 1.53 | Variable | 52% | 13% |  |
-| Nikita Zadorov | D | BOS | 1.55 | 1.67 | Volatile | 51% | 29% |  |
-
-### EDM @ MTL
+### ANA @ NYR
 
 | Player | Pos | Team | Exp SOG | Hist Avg | Variance | P(2+) | P(3+) | Status |
 |--------|-----|------|---------|----------|----------|-------|-------|--------|
-| Connor McDavid | C | EDM | 2.87 | 3.00 | Volatile | 75% | 57% |  |
-| Leon Draisaitl | C | EDM | 2.31 | 2.60 | Volatile | 69% | 45% |  |
-| Matt Savoie | C | EDM | 1.72 | 1.80 | Volatile | 58% | 24% |  |
-| Nick Suzuki | C | MTL | 1.65 | 2.00 | Volatile | 55% | 23% |  |
-| Oliver Kapanen | C | MTL | 1.65 | 2.00 | Volatile | 55% | 24% |  |
-| Zach Hyman | L | EDM | 2.22 | 2.46 | Volatile | 65% | 44% |  |
-| Cole Caufield | R | MTL | 2.26 | 3.07 | Volatile | 65% | 45% |  |
-| Vasily Podkolzin | R | EDM | 1.53 | 1.53 | Volatile | 51% | 21% |  |
-| Darnell Nurse | D | EDM | 2.29 | 2.60 | Volatile | 69% | 45% |  |
-| Evan Bouchard | D | EDM | 1.73 | 2.20 | Volatile | 56% | 31% |  |
-| Mattias Ekholm | D | EDM | 1.73 | 2.13 | Volatile | 59% | 23% |  |
-| Lane Hutson | D | MTL | 1.61 | 2.20 | Volatile | 53% | 27% |  |
-| Noah Dobson | D | MTL | 1.60 | 1.93 | Volatile | 53% | 26% |  |
+| Mika Zibanejad | C | NYR | 2.75 | 2.80 | Volatile | 72% | 55% |  |
+| Leo Carlsson | C | ANA | 2.60 | 2.40 | Volatile | 71% | 52% |  |
+| Mason McTavish | C | ANA | 2.05 | 2.00 | Volatile | 63% | 39% |  |
+| Mikael Granlund | C | ANA | 1.92 | 1.93 | Volatile | 59% | 38% |  |
+| J.T. Miller | C | NYR | 1.69 | 1.47 | Volatile | 55% | 28% |  |
+| Vincent Trocheck | C | NYR | 1.60 | 1.60 | Volatile | 54% | 18% |  |
+| Artemi Panarin | L | NYR | 2.73 | 2.60 | Volatile | 69% | 54% |  |
+| Cutter Gauthier | L | ANA | 2.58 | 2.93 | Volatile | 70% | 52% |  |
+| Chris Kreider | L | ANA | 2.45 | 2.20 | Variable | 78% | 49% |  |
+| Alex Killorn | L | ANA | 1.85 | 1.53 | Volatile | 58% | 35% |  |
+| Alexis Lafrenière | L | NYR | 1.83 | 1.60 | Variable | 63% | 25% |  |
+| Will Cuylle | L | NYR | 1.54 | 1.67 | Volatile | 51% | 25% |  |
+| Beckett Sennecke | R | ANA | 2.81 | 2.47 | Variable | 79% | 58% |  |
+| Troy Terry | R | ANA | 2.77 | 2.60 | Variable | 83% | 58% |  |
+| Jackson LaCombe | D | ANA | 2.49 | 2.40 | Volatile | 72% | 50% |  |
+| Jacob Trouba | D | ANA | 2.15 | 1.93 | Volatile | 63% | 43% |  |
+| Olen Zellweger | D | ANA | 1.50 | 1.67 | Volatile | 50% | 26% |  |
 
-### VAN @ NJD
-
-| Player | Pos | Team | Exp SOG | Hist Avg | Variance | P(2+) | P(3+) | Status |
-|--------|-----|------|---------|----------|----------|-------|-------|--------|
-| Nico Hischier | C | NJD | 2.67 | 2.80 | Variable | 80% | 55% |  |
-| Elias Pettersson | C | VAN | 2.32 | 2.27 | Volatile | 66% | 46% | **DTD** |
-| Dawson Mercer | C | NJD | 2.08 | 2.13 | Volatile | 67% | 37% |  |
-| Kiefer Sherwood | L | VAN | 2.67 | 2.53 | Volatile | 75% | 54% |  |
-| Jake DeBrusk | L | VAN | 2.63 | 2.73 | Volatile | 72% | 53% |  |
-| Jesper Bratt | L | NJD | 2.27 | 2.53 | Volatile | 65% | 46% |  |
-| Evander Kane | L | VAN | 2.14 | 2.27 | Volatile | 62% | 44% |  |
-| Conor Garland | R | VAN | 2.44 | 2.53 | Volatile | 70% | 49% |  |
-| Arseny Gritsyuk | R | NJD | 2.37 | 2.53 | Volatile | 72% | 46% | **DTD** |
-| Brock Boeser | R | VAN | 2.24 | 2.47 | Volatile | 69% | 43% |  |
-| Quinn Hughes | D | VAN | 2.95 | 3.27 | Volatile | 78% | 59% |  |
-| Dougie Hamilton | D | NJD | 2.43 | 2.47 | Variable | 75% | 48% |  |
-| Luke Hughes | D | NJD | 2.31 | 2.40 | Volatile | 68% | 46% |  |
-| Filip Hronek | D | VAN | 1.50 | 1.53 | Volatile | 50% | 24% |  |
-
-### UTA @ PIT
+### NSH @ STL
 
 | Player | Pos | Team | Exp SOG | Hist Avg | Variance | P(2+) | P(3+) | Status |
 |--------|-----|------|---------|----------|----------|-------|-------|--------|
-| Ben Kindel | C | PIT | 2.28 | 2.67 | Volatile | 64% | 46% |  |
-| Barrett Hayton | C | UTA | 2.14 | 1.87 | Volatile | 63% | 42% |  |
-| Sidney Crosby | C | PIT | 2.05 | 2.73 | Volatile | 61% | 41% |  |
-| Nick Schmaltz | C | UTA | 1.64 | 1.47 | Volatile | 54% | 28% |  |
-| Lawson Crouse | L | UTA | 1.57 | 1.47 | Volatile | 53% | 18% |  |
-| Dylan Guenther | R | UTA | 2.63 | 3.00 | Volatile | 76% | 53% |  |
-| Clayton Keller | R | UTA | 2.48 | 2.80 | Volatile | 69% | 50% |  |
-| Bryan Rust | R | PIT | 2.05 | 2.53 | Volatile | 62% | 40% |  |
-| JJ Peterka | R | UTA | 2.03 | 2.13 | Volatile | 62% | 39% |  |
-| Anthony Mantha | R | PIT | 1.67 | 1.80 | Volatile | 55% | 27% |  |
-| Mikhail Sergachev | D | UTA | 2.38 | 2.53 | Volatile | 72% | 47% |  |
-| Erik Karlsson | D | PIT | 2.19 | 2.60 | Volatile | 64% | 44% |  |
-| Kris Letang | D | PIT | 1.64 | 2.13 | Lower* | 56% | 17% |  |
+| Steven Stamkos | C | NSH | 2.79 | 2.53 | Volatile | 69% | 55% |  |
+| Jonathan Marchessault | C | NSH | 1.98 | 1.93 | Volatile | 65% | 34% |  |
+| Ryan O'Reilly | C | NSH | 1.65 | 1.47 | Volatile | 55% | 27% |  |
+| Brayden Schenn | C | STL | 1.64 | 1.80 | Volatile | 53% | 34% |  |
+| Robert Thomas | C | STL | 1.52 | 1.47 | Volatile | 51% | 16% |  |
+| Filip Forsberg | L | NSH | 2.77 | 3.20 | Volatile | 76% | 56% |  |
+| Dylan Holloway | L | STL | 2.23 | 2.33 | Volatile | 66% | 44% | **DTD** |
+| Michael Bunting | L | NSH | 1.96 | 1.87 | Volatile | 63% | 34% |  |
+| Jake Neighbours | L | STL | 1.50 | 1.40 | Volatile | 50% | 19% |  |
+| Luke Evangelista | R | NSH | 2.26 | 2.47 | Volatile | 67% | 44% |  |
+| Roman Josi | D | NSH | 2.52 | 2.73 | Variable | 76% | 51% |  |
+| Justin Faulk | D | STL | 1.65 | 2.00 | Volatile | 56% | 21% |  |
+| Brady Skjei | D | NSH | 1.54 | 1.67 | Volatile | 52% | 20% |  |
 
-### BUF @ SEA
+### FLA @ TBL
 
 | Player | Pos | Team | Exp SOG | Hist Avg | Variance | P(2+) | P(3+) | Status |
 |--------|-----|------|---------|----------|----------|-------|-------|--------|
-| Tage Thompson | C | BUF | 2.95 | 3.47 | Lower* | 87% | 63% |  |
-| Chandler Stephenson | C | SEA | 1.83 | 1.53 | Volatile | 60% | 30% |  |
-| Matty Beniers | C | SEA | 1.74 | 1.60 | Volatile | 56% | 31% |  |
-| Mason Marchment | L | SEA | 2.10 | 1.93 | Volatile | 64% | 41% |  |
-| Zach Benson | L | BUF | 1.57 | 1.40 | Volatile | 53% | 19% |  |
-| Josh Doan | R | BUF | 2.32 | 2.47 | Volatile | 66% | 46% |  |
-| Jordan Eberle | R | SEA | 2.17 | 2.27 | Volatile | 69% | 40% |  |
-| Eeli Tolvanen | R | SEA | 2.07 | 2.00 | Volatile | 66% | 38% |  |
-| Jack Quinn | R | BUF | 1.80 | 2.07 | Volatile | 58% | 31% |  |
-| Vince Dunn | D | SEA | 2.48 | 2.33 | Volatile | 70% | 50% |  |
-| Brandon Montour | D | SEA | 2.44 | 2.53 | Volatile | 71% | 49% |  |
-| Rasmus Dahlin | D | BUF | 2.31 | 2.67 | Volatile | 69% | 45% |  |
+| Jake Guentzel | C | TBL | 2.41 | 2.67 | Volatile | 67% | 48% |  |
+| Anton Lundell | C | FLA | 2.25 | 2.60 | Volatile | 68% | 44% |  |
+| Brayden Point | C | TBL | 2.22 | 2.47 | Variable | 71% | 41% |  |
+| Anthony Cirelli | C | TBL | 2.14 | 2.20 | Volatile | 62% | 43% |  |
+| Sam Bennett | C | FLA | 2.14 | 2.60 | Volatile | 65% | 42% |  |
+| Carter Verhaeghe | C | FLA | 2.07 | 2.47 | Volatile | 65% | 38% |  |
+| Eetu Luostarinen | C | FLA | 1.75 | 2.13 | Volatile | 57% | 30% |  |
+| Zemgus Girgensons | C | TBL | 1.70 | 1.67 | Volatile | 55% | 31% |  |
+| Sam Reinhart | C | FLA | 1.61 | 2.00 | Volatile | 54% | 19% |  |
+| Evan Rodrigues | C | FLA | 1.58 | 1.73 | Volatile | 52% | 26% |  |
+| Brandon Hagel | L | TBL | 2.71 | 3.27 | Volatile | 71% | 54% |  |
+| Brad Marchand | L | FLA | 2.37 | 2.73 | Volatile | 65% | 48% |  |
+| Nick Paul | L | TBL | 1.53 | 1.62 | Volatile | 51% | 23% |  |
+| Nikita Kucherov | R | TBL | 3.28 | 3.47 | Volatile | 76% | 62% |  |
+| Mackie Samoskevich | R | FLA | 2.16 | 2.47 | Volatile | 66% | 42% |  |
+| Darren Raddysh | D | TBL | 2.03 | 2.33 | Volatile | 66% | 36% |  |
+| Seth Jones | D | FLA | 1.80 | 2.27 | Volatile | 57% | 33% |  |
+| Charle-Edouard D'Astous | D | TBL | 1.63 | 1.40 | Volatile | 54% | 26% |  |
+
+### OTT @ WPG
+
+| Player | Pos | Team | Exp SOG | Hist Avg | Variance | P(2+) | P(3+) | Status |
+|--------|-----|------|---------|----------|----------|-------|-------|--------|
+| Dylan Cozens | C | OTT | 2.31 | 2.40 | Volatile | 68% | 46% |  |
+| Tim Stützle | C | OTT | 2.15 | 2.13 | Volatile | 66% | 41% |  |
+| Shane Pinto | C | OTT | 1.91 | 2.00 | Volatile | 61% | 34% |  |
+| Ridly Greig | C | OTT | 1.79 | 1.80 | Volatile | 60% | 27% |  |
+| Cole Perfetti | C | WPG | 1.61 | 1.93 | Lower* | 55% | 13% |  |
+| Mark Scheifele | C | WPG | 1.57 | 1.87 | Volatile | 53% | 20% |  |
+| Brady Tkachuk | L | OTT | 3.64 | 4.14 | Variable | 88% | 73% |  |
+| Kyle Connor | L | WPG | 2.40 | 2.87 | Volatile | 71% | 48% |  |
+| Fabian Zetterlund | L | OTT | 2.17 | 2.00 | Volatile | 63% | 43% |  |
+| Drake Batherson | R | OTT | 2.35 | 2.47 | Volatile | 70% | 46% |  |
+| Claude Giroux | R | OTT | 1.67 | 1.60 | Volatile | 54% | 29% |  |
+| Michael Amadio | R | OTT | 1.67 | 1.67 | Volatile | 56% | 24% |  |
+| Jake Sanderson | D | OTT | 2.21 | 2.27 | Volatile | 68% | 42% |  |
+| Neal Pionk | D | WPG | 1.55 | 1.87 | Volatile | 52% | 21% |  |
+| Josh Morrissey | D | WPG | 1.52 | 1.60 | Volatile | 50% | 23% |  |
 
 ---
 
@@ -119,21 +111,21 @@
 
 | Rank | Player | Team | Matchup | Exp SOG | Hist Avg | Variance | P(2+) | P(3+) | Status |
 |------|--------|------|---------|---------|----------|----------|-------|-------|--------|
-| 1 | David Pastrnak | BOS | @ MIN | 3.36 | 3.67 | Variable | 83% | 67% |  |
-| 2 | Viktor Arvidsson | BOS | @ MIN | 2.71 | 2.93 | Variable | 81% | 56% | **DTD** |
-| 3 | Morgan Geekie | BOS | @ MIN | 2.48 | 2.80 | Volatile | 72% | 50% |  |
-| 4 | Tage Thompson | BUF | @ SEA | 2.95 | 3.47 | Lower* | 87% | 63% |  |
-| 5 | Connor McDavid | EDM | @ MTL | 2.87 | 3.00 | Volatile | 75% | 57% |  |
-| 6 | Joel Eriksson Ek | MIN | vs BOS | 3.02 | 3.07 | Variable | 87% | 65% |  |
-| 7 | Matt Boldy | MIN | vs BOS | 3.21 | 3.40 | Variable | 86% | 67% |  |
-| 8 | Kirill Kaprizov | MIN | vs BOS | 3.08 | 3.47 | Volatile | 78% | 61% |  |
-| 9 | Nico Hischier | NJD | vs VAN | 2.67 | 2.80 | Variable | 80% | 55% |  |
-| 10 | Vince Dunn | SEA | vs BUF | 2.48 | 2.33 | Volatile | 70% | 50% |  |
-| 11 | Dylan Guenther | UTA | @ PIT | 2.63 | 3.00 | Volatile | 76% | 53% |  |
-| 12 | Clayton Keller | UTA | @ PIT | 2.48 | 2.80 | Volatile | 69% | 50% |  |
-| 13 | Quinn Hughes | VAN | @ NJD | 2.95 | 3.27 | Volatile | 78% | 59% |  |
-| 14 | Kiefer Sherwood | VAN | @ NJD | 2.67 | 2.53 | Volatile | 75% | 54% |  |
-| 15 | Jake DeBrusk | VAN | @ NJD | 2.63 | 2.73 | Volatile | 72% | 53% |  |
+| 1 | Troy Terry | ANA | @ NYR | 2.77 | 2.60 | Variable | 83% | 58% |  |
+| 2 | Beckett Sennecke | ANA | @ NYR | 2.81 | 2.47 | Variable | 79% | 58% |  |
+| 3 | Chris Kreider | ANA | @ NYR | 2.45 | 2.20 | Variable | 78% | 49% |  |
+| 4 | Jackson LaCombe | ANA | @ NYR | 2.49 | 2.40 | Volatile | 72% | 50% |  |
+| 5 | Leo Carlsson | ANA | @ NYR | 2.60 | 2.40 | Volatile | 71% | 52% |  |
+| 6 | Cutter Gauthier | ANA | @ NYR | 2.58 | 2.93 | Volatile | 70% | 52% |  |
+| 7 | Jason Robertson | DAL | vs LAK | 2.45 | 3.53 | Volatile | 70% | 49% |  |
+| 8 | Roman Josi | NSH | @ STL | 2.52 | 2.73 | Variable | 76% | 51% |  |
+| 9 | Filip Forsberg | NSH | @ STL | 2.77 | 3.20 | Volatile | 76% | 56% |  |
+| 10 | Steven Stamkos | NSH | @ STL | 2.79 | 2.53 | Volatile | 69% | 55% |  |
+| 11 | Mika Zibanejad | NYR | vs ANA | 2.75 | 2.80 | Volatile | 72% | 55% |  |
+| 12 | Artemi Panarin | NYR | vs ANA | 2.73 | 2.60 | Volatile | 69% | 54% |  |
+| 13 | Brady Tkachuk | OTT | @ WPG | 3.64 | 4.14 | Variable | 88% | 73% |  |
+| 14 | Nikita Kucherov | TBL | vs FLA | 3.28 | 3.47 | Volatile | 76% | 62% |  |
+| 15 | Brandon Hagel | TBL | vs FLA | 2.71 | 3.27 | Volatile | 71% | 54% |  |
 
 ---
 
@@ -141,23 +133,22 @@
 
 | Player | Team | Exp SOG | Hist Avg | Variance | P(2+) | P(3+) | Status |
 |--------|------|---------|----------|----------|-------|-------|--------|
-| David Pastrnak | BOS | 3.36 | 3.67 | Variable | 83% | 67% |  |
-| Viktor Arvidsson | BOS | 2.71 | 2.93 | Variable | 81% | 56% | **DTD** |
-| Morgan Geekie | BOS | 2.48 | 2.80 | Volatile | 72% | 50% |  |
-| Tage Thompson | BUF | 2.95 | 3.47 | Lower* | 87% | 63% |  |
-| Connor McDavid | EDM | 2.87 | 3.00 | Volatile | 75% | 57% |  |
-| Joel Eriksson Ek | MIN | 3.02 | 3.07 | Variable | 87% | 65% |  |
-| Matt Boldy | MIN | 3.21 | 3.40 | Variable | 86% | 67% |  |
-| Kirill Kaprizov | MIN | 3.08 | 3.47 | Volatile | 78% | 61% |  |
-| Nico Hischier | NJD | 2.67 | 2.80 | Variable | 80% | 55% |  |
-| Dougie Hamilton | NJD | 2.43 | 2.47 | Variable | 75% | 48% |  |
-| Arseny Gritsyuk | NJD | 2.37 | 2.53 | Volatile | 72% | 46% | **DTD** |
-| Brandon Montour | SEA | 2.44 | 2.53 | Volatile | 71% | 49% |  |
-| Dylan Guenther | UTA | 2.63 | 3.00 | Volatile | 76% | 53% |  |
-| Mikhail Sergachev | UTA | 2.38 | 2.53 | Volatile | 72% | 47% |  |
-| Quinn Hughes | VAN | 2.95 | 3.27 | Volatile | 78% | 59% |  |
-| Kiefer Sherwood | VAN | 2.67 | 2.53 | Volatile | 75% | 54% |  |
-| Jake DeBrusk | VAN | 2.63 | 2.73 | Volatile | 72% | 53% |  |
+| Troy Terry | ANA | 2.77 | 2.60 | Variable | 83% | 58% |  |
+| Beckett Sennecke | ANA | 2.81 | 2.47 | Variable | 79% | 58% |  |
+| Chris Kreider | ANA | 2.45 | 2.20 | Variable | 78% | 49% |  |
+| Jackson LaCombe | ANA | 2.49 | 2.40 | Volatile | 72% | 50% |  |
+| Leo Carlsson | ANA | 2.60 | 2.40 | Volatile | 71% | 52% |  |
+| Jason Robertson | DAL | 2.45 | 3.53 | Volatile | 70% | 49% |  |
+| Adrian Kempe | LAK | 2.30 | 2.93 | Lower* | 74% | 43% |  |
+| Roman Josi | NSH | 2.52 | 2.73 | Variable | 76% | 51% |  |
+| Filip Forsberg | NSH | 2.77 | 3.20 | Volatile | 76% | 56% |  |
+| Mika Zibanejad | NYR | 2.75 | 2.80 | Volatile | 72% | 55% |  |
+| Brady Tkachuk | OTT | 3.64 | 4.14 | Variable | 88% | 73% |  |
+| Drake Batherson | OTT | 2.35 | 2.47 | Volatile | 70% | 46% |  |
+| Nikita Kucherov | TBL | 3.28 | 3.47 | Volatile | 76% | 62% |  |
+| Brandon Hagel | TBL | 2.71 | 3.27 | Volatile | 71% | 54% |  |
+| Brayden Point | TBL | 2.22 | 2.47 | Variable | 71% | 41% |  |
+| Kyle Connor | WPG | 2.40 | 2.87 | Volatile | 71% | 48% |  |
 
 ---
 
@@ -167,59 +158,34 @@
 
 | Player | Team | Position | Status | Historical Avg |
 |--------|------|----------|--------|----------------|
-| Jaccob Slavin | CAR | ? | **OUT** | 0.00 |
-| Charles-Alexis Legault | CAR | ? | **OUT** | 0.00 |
-| Rasmus Ristolainen | PHI | ? | **OUT** | 0.00 |
-| Tyson Foerster | PHI | ? | **OUT** | 0.00 |
-| Marcus Foligno | MIN | ? | **OUT** | 0.00 |
-| Vinnie Hinostroza | MIN | ? | **OUT** | 0.00 |
-| Tyler Pitlick | MIN | ? | **OUT** | 0.00 |
-| Mats Zuccarello | MIN | ? | **OUT** | 0.00 |
-| Jacob Middleton | MIN | ? | **OUT** | 0.00 |
-| Jordan Harris | BOS | ? | **OUT** | 0.00 |
-| Matej Blumel | BOS | ? | **OUT** | 0.00 |
-| Michael Callahan | BOS | ? | **OUT** | 0.00 |
-| Kaiden Guhle | MTL | ? | **OUT** | 0.00 |
-| David Reinbacher | MTL | ? | **OUT** | 0.00 |
-| Patrik Laine | MTL | ? | **OUT** | 0.00 |
-| Alex Newhook | MTL | ? | **OUT** | 0.00 |
-| Kirby Dach | MTL | ? | **OUT** | 0.00 |
-| Sam Montembeault | MTL | ? | **OUT** | 0.00 |
-| Jake Walman | EDM | ? | **OUT** | 0.00 |
-| Kasperi Kapanen | EDM | ? | **OUT** | 0.00 |
-| Connor Clattenburg | EDM | ? | **OUT** | 0.00 |
-| Jack Roslovic | EDM | ? | **OUT** | 0.00 |
-| Jack Hughes | NJD | ? | **OUT** | 0.00 |
-| Brett Pesce | NJD | ? | **OUT** | 0.00 |
-| Zack MacEwen | NJD | ? | **OUT** | 0.00 |
-| Johnathan Kovacevic | NJD | ? | **OUT** | 0.00 |
-| Evgenii Dadonov | NJD | ? | **OUT** | 0.00 |
-| Timo Meier | NJD | ? | **OUT** | 0.00 |
-| Simon Nemec | NJD | ? | **OUT** | 0.00 |
-| Filip Chytil | VAN | ? | **OUT** | 0.00 |
-| Derek Forbort | VAN | ? | **OUT** | 0.00 |
-| Teddy Blueger | VAN | ? | **OUT** | 0.00 |
-| Marco Rossi | VAN | ? | **OUT** | 0.00 |
-| Filip Hallander | PIT | ? | **OUT** | 0.00 |
-| Jack St. Ivany | PIT | ? | **OUT** | 0.00 |
-| Justin Brazeau | PIT | ? | **OUT** | 0.00 |
-| Noel Acciari | PIT | ? | **OUT** | 0.00 |
-| Evgeni Malkin | PIT | ? | **OUT** | 0.00 |
-| Blake Lizotte | PIT | ? | **OUT** | 0.00 |
-| Alex Kerfoot | UTA | ? | **OUT** | 0.00 |
-| Juuso Valimaki | UTA | ? | **OUT** | 0.00 |
-| Logan Cooley | UTA | ? | **OUT** | 0.00 |
-| Jaden Schwartz | SEA | ? | **OUT** | 0.00 |
-| Matt Murray | SEA | ? | **OUT** | 0.00 |
-| Berkly Catton | SEA | ? | **OUT** | 0.00 |
-| Jared McCann | SEA | ? | **OUT** | 0.00 |
-| Justin Danforth | BUF | ? | **OUT** | 0.00 |
-| Jiri Kulich | BUF | ? | **OUT** | 0.00 |
-| Michael Kesselring | BUF | ? | **OUT** | 0.00 |
-| Jason Zucker | BUF | ? | **OUT** | 0.00 |
-| Josh Norris | BUF | ? | **OUT** | 0.00 |
-| Colten Ellis | BUF | ? | **OUT** | 0.00 |
-| Alex Tuch | BUF | ? | **OUT** | 0.00 |
+| Lian Bichsel | DAL | ? | **OUT** | 0.00 |
+| Tyler Seguin | DAL | ? | **OUT** | 0.00 |
+| Nils Lundkvist | DAL | ? | **OUT** | 0.00 |
+| Phillip Danault | LAK | ? | **OUT** | 0.00 |
+| Matt Rempe | NYR | ? | **OUT** | 0.00 |
+| Adam Fox | NYR | ? | **OUT** | 0.00 |
+| Adam Edstrom | NYR | ? | **OUT** | 0.00 |
+| Petr Mrazek | ANA | ? | **OUT** | 0.00 |
+| Torey Krug | STL | ? | **OUT** | 0.00 |
+| Alexey Toropchenko | STL | ? | **OUT** | 0.00 |
+| Jimmy Snuggerud | STL | ? | **OUT** | 0.00 |
+| Jordan Kyrou | STL | ? | **OUT** | 0.00 |
+| Cole Smith | NSH | ? | **OUT** | 0.00 |
+| Zachary L'Heureux | NSH | ? | **OUT** | 0.00 |
+| Ozzy Wiesblatt | NSH | ? | **OUT** | 0.00 |
+| Justin Barron | NSH | ? | **OUT** | 0.00 |
+| Ryan McDonagh | TBL | ? | **OUT** | 0.00 |
+| Andrei Vasilevskiy | TBL | ? | **OUT** | 0.00 |
+| Victor Hedman | TBL | ? | **OUT** | 0.00 |
+| Matthew Tkachuk | FLA | ? | **OUT** | 0.00 |
+| Aleksander Barkov | FLA | ? | **OUT** | 0.00 |
+| Dmitry Kulikov | FLA | ? | **OUT** | 0.00 |
+| Jonah Gadjovich | FLA | ? | **OUT** | 0.00 |
+| Tomas Nosek | FLA | ? | **OUT** | 0.00 |
+| Cole Schwindt | FLA | ? | **OUT** | 0.00 |
+| Haydn Fleury | WPG | ? | **OUT** | 0.00 |
+| Thomas Chabot | OTT | ? | **OUT** | 0.00 |
+| Lars Eller | OTT | ? | **OUT** | 0.00 |
 
 ---
 
