@@ -1,7 +1,7 @@
 # NHL Shots on Goal Predictions
 ## 2025-12-21
 
-*Generated: 2025-12-21 20:47:08*
+*Generated: 2025-12-21 20:53:13*
 
 *Injury data loaded: 125 players on injury report*
 
@@ -302,6 +302,41 @@
 | **LTIR** | Long-Term Injured Reserve |
 | **DTD** | Day-to-Day (may or may not play) |
 | **SUSPENDED** | Suspended from play |
+
+---
+
+## 10-Day Prediction Accuracy Summary
+
+*Period: 2025-12-11 to 2025-12-21*
+
+### Overall Performance
+
+| Metric | Value |
+|--------|-------|
+| Total Predictions | 1114 |
+| 2+ SOG Accuracy | 59.8% |
+| Actual 2+ SOG Rate | 59.8% |
+| Mean Absolute Error | 1.28 SOG |
+
+### Top 15 Most Accurate Players (Sorted by Team)
+
+| Team | Player | Pos | Games | Accuracy | Avg Exp | Avg Act |
+|------|--------|-----|-------|----------|---------|---------|
+| CBJ | Zach Werenski | D | 5 | 100.0% | 3.18 | 4.00 |
+| CBJ | Adam Fantilli | C | 5 | 100.0% | 2.61 | 3.00 |
+| DET | Alex DeBrincat | R | 5 | 100.0% | 2.62 | 4.40 |
+| MIN | Kirill Kaprizov | L | 6 | 100.0% | 2.80 | 3.67 |
+| MIN | Matt Boldy | L | 6 | 100.0% | 2.78 | 3.33 |
+| MIN | Vladimir Tarasenko | R | 6 | 100.0% | 1.95 | 3.00 |
+| NJD | Nico Hischier | C | 5 | 100.0% | 2.37 | 3.40 |
+| NSH | Filip Forsberg | L | 5 | 100.0% | 2.76 | 3.40 |
+| NSH | Steven Stamkos | C | 5 | 100.0% | 2.60 | 4.60 |
+| OTT | Brady Tkachuk | L | 5 | 100.0% | 3.79 | 5.40 |
+| OTT | Dylan Cozens | C | 5 | 100.0% | 2.33 | 3.40 |
+| PIT | Erik Karlsson | D | 6 | 100.0% | 2.42 | 3.00 |
+| PIT | Bryan Rust | R | 6 | 100.0% | 2.46 | 3.50 |
+| SJS | William Eklund | L | 5 | 100.0% | 1.92 | 4.60 |
+| TBL | Brayden Point | C | 5 | 100.0% | 2.06 | 2.60 |
 
 ---
 
