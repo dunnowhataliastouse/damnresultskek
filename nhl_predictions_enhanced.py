@@ -2392,19 +2392,33 @@ class EnhancedPlayerPredictor:
                 "toi_volatility": round(toi_cv, 3),
                 "superstar_regression_applied": expected_shots > 3.0,
                 "defenseman_reduction_applied": position == "D",
-            }
+            },
+
+            # Historical accuracy (will be populated by predict_team_players)
+            "historical_accuracy_pct": None,
+            "historical_predictions": 0,
         }
 
     def predict_team_players(self, team_abbrev: str, opponent: str, game_date: str,
                              is_home: bool, limit: int = 20,
-                             include_injured_out: bool = False) -> List[Dict[str, Any]]:
+                             include_injured_out: bool = False,
+                             include_historical_accuracy: bool = True) -> List[Dict[str, Any]]:
         """
         Predict stats for all players on a team for a specific game.
 
         Args:
             include_injured_out: If True, include players who are OUT/IR/LTIR
                                 (they'll be flagged but included in results)
+            include_historical_accuracy: If True, include 10-day historical accuracy for each player
         """
+        # Get historical accuracy data if requested
+        player_accuracy = {}
+        if include_historical_accuracy:
+            try:
+                player_accuracy = self.get_player_historical_accuracy(lookback_days=10)
+            except Exception:
+                pass  # Silently fail if accuracy data unavailable
+
         with self.get_connection() as conn:
             # Get active players on roster
             players = conn.execute("""
@@ -2449,6 +2463,13 @@ class EnhancedPlayerPredictor:
                     # Reduce shots confidence to reflect uncertainty
                     pred["shots_confidence"] = round(pred["shots_confidence"] * 0.7, 3)
                     pred["blocked_confidence"] = round(pred["blocked_confidence"] * 0.7, 3)
+
+                # Add historical accuracy if available
+                player_id = pred["player_id"]
+                if player_id in player_accuracy:
+                    acc_data = player_accuracy[player_id]
+                    pred["historical_accuracy_pct"] = acc_data["accuracy_pct"]
+                    pred["historical_predictions"] = acc_data["predictions"]
 
                 predictions.append(pred)
             except Exception as e:
@@ -2496,6 +2517,105 @@ class EnhancedPlayerPredictor:
                 "injuries_loaded": self.injury_tracker is not None
             }
         }
+
+    def get_player_historical_accuracy(self, lookback_days: int = 10,
+                                         predictions_dir: str = "predictions") -> Dict[int, Dict]:
+        """
+        Calculate historical prediction accuracy for all players over the last N days.
+        Returns a dictionary mapping player_id to their accuracy stats.
+
+        This is cached and reused for all predictions in a session.
+        """
+        # Check if we have a cached result
+        cache_key = f"accuracy_{lookback_days}"
+        if hasattr(self, '_accuracy_cache') and cache_key in self._accuracy_cache:
+            return self._accuracy_cache[cache_key]
+
+        import json
+        from datetime import datetime, timedelta
+        from pathlib import Path
+        from collections import defaultdict
+
+        if not hasattr(self, '_accuracy_cache'):
+            self._accuracy_cache = {}
+
+        predictions_path = Path(predictions_dir)
+        end_date = datetime.now()
+        start_date = end_date - timedelta(days=lookback_days)
+
+        player_stats = defaultdict(lambda: {
+            "predictions": 0,
+            "correct_2plus": 0,
+            "total_expected": 0,
+            "total_actual": 0
+        })
+
+        with self.get_connection() as conn:
+            current_date = start_date
+            while current_date <= end_date:
+                date_str = current_date.strftime("%Y-%m-%d")
+                pred_file = predictions_path / f"predictions_{date_str}.json"
+
+                if not pred_file.exists():
+                    current_date += timedelta(days=1)
+                    continue
+
+                try:
+                    with open(pred_file, 'r', encoding='utf-8') as f:
+                        pred_data = json.load(f)
+                except:
+                    current_date += timedelta(days=1)
+                    continue
+
+                # Get actual results
+                actuals = conn.execute("""
+                    SELECT pgs.player_id, pgs.shots
+                    FROM player_game_stats pgs
+                    JOIN games g ON pgs.game_id = g.game_id
+                    WHERE g.game_date = ?
+                """, (date_str,)).fetchall()
+
+                if not actuals:
+                    current_date += timedelta(days=1)
+                    continue
+
+                actual_map = {row[0]: row[1] for row in actuals}
+
+                for pred in pred_data.get("all_predictions", []):
+                    player_id = pred["player_id"]
+                    if player_id not in actual_map:
+                        continue
+
+                    actual_sog = actual_map[player_id]
+                    expected = pred["expected_shots"]
+                    prob_2plus = pred.get("prob_2plus", 0)
+
+                    hit_2plus = actual_sog >= 2
+                    predicted_2plus = prob_2plus >= 0.5
+                    correct = (predicted_2plus and hit_2plus) or (not predicted_2plus and not hit_2plus)
+
+                    ps = player_stats[player_id]
+                    ps["predictions"] += 1
+                    ps["correct_2plus"] += 1 if correct else 0
+                    ps["total_expected"] += expected
+                    ps["total_actual"] += actual_sog
+
+                current_date += timedelta(days=1)
+
+        # Calculate accuracy percentages
+        result = {}
+        for player_id, stats in player_stats.items():
+            if stats["predictions"] >= 1:
+                accuracy = (stats["correct_2plus"] / stats["predictions"]) * 100
+                result[player_id] = {
+                    "accuracy_pct": round(accuracy, 1),
+                    "predictions": stats["predictions"],
+                    "avg_expected": round(stats["total_expected"] / stats["predictions"], 2),
+                    "avg_actual": round(stats["total_actual"] / stats["predictions"], 2)
+                }
+
+        self._accuracy_cache[cache_key] = result
+        return result
 
     def compare_predictions_vs_results(self, lookback_days: int = 10,
                                         predictions_dir: str = "predictions") -> Dict[str, Any]:

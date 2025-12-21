@@ -100,18 +100,21 @@ def generate_predictions_readme(game_date: str, output_path: str = "predictions/
         players.sort(key=lambda x: (pos_order.get(x['position'], 4), -x['expected_shots']))
 
         if players:
-            lines.append("| Player | Pos | Team | Exp SOG | Hist Avg | Variance | P(2+) | P(3+) | Status |")
-            lines.append("|--------|-----|------|---------|----------|----------|-------|-------|--------|")
+            lines.append("| Player | Pos | Team | Exp SOG | Hist Avg | Variance | P(2+) | P(3+) | Acc% | Status |")
+            lines.append("|--------|-----|------|---------|----------|----------|-------|-------|------|--------|")
 
             for p in players:
                 prob2 = p['shot_probabilities'].get('2+', 0) * 100
                 prob3 = p['shot_probabilities'].get('3+', 0) * 100
                 hist_avg = p.get('historical_avg_shots', p['expected_shots'])
                 variance = p.get('variance_indicator', 'N/A')
+                # Historical accuracy (10-day)
+                hist_acc = p.get('historical_accuracy_pct')
+                acc_str = f"{hist_acc:.0f}%" if hist_acc is not None else "-"
                 # Show injury status if DTD/Questionable
                 status = p.get('injury_status', '')
                 status_str = f"**{status}**" if status else ""
-                lines.append(f"| {p['player_name']} | {p['position']} | {p['team']} | {p['expected_shots']:.2f} | {hist_avg:.2f} | {variance} | {prob2:.0f}% | {prob3:.0f}% | {status_str} |")
+                lines.append(f"| {p['player_name']} | {p['position']} | {p['team']} | {p['expected_shots']:.2f} | {hist_avg:.2f} | {variance} | {prob2:.0f}% | {prob3:.0f}% | {acc_str} | {status_str} |")
                 all_players.append(p)
         else:
             lines.append("*No players meeting criteria*")
@@ -128,18 +131,20 @@ def generate_predictions_readme(game_date: str, output_path: str = "predictions/
     # Get top 15 by expected shots first, then re-sort for display
     top_15 = sorted(all_players, key=lambda x: -x['expected_shots'])[:15]
     top_15.sort(key=lambda x: (x['team'], -x['shot_probabilities'].get('2+', 0)))
-    lines.append("| Rank | Player | Team | Matchup | Exp SOG | Hist Avg | Variance | P(2+) | P(3+) | Status |")
-    lines.append("|------|--------|------|---------|---------|----------|----------|-------|-------|--------|")
+    lines.append("| Rank | Player | Team | Matchup | Exp SOG | Hist Avg | Variance | P(2+) | P(3+) | Acc% | Status |")
+    lines.append("|------|--------|------|---------|---------|----------|----------|-------|-------|------|--------|")
     for i, p in enumerate(top_15, 1):
         prob2 = p['shot_probabilities'].get('2+', 0) * 100
         prob3 = p['shot_probabilities'].get('3+', 0) * 100
         hist_avg = p.get('historical_avg_shots', p['expected_shots'])
         variance = p.get('variance_indicator', 'N/A')
+        hist_acc = p.get('historical_accuracy_pct')
+        acc_str = f"{hist_acc:.0f}%" if hist_acc is not None else "-"
         opp = p['opponent']
         loc = 'vs' if p['is_home'] else '@'
         status = p.get('injury_status', '')
         status_str = f"**{status}**" if status else ""
-        lines.append(f"| {i} | {p['player_name']} | {p['team']} | {loc} {opp} | {p['expected_shots']:.2f} | {hist_avg:.2f} | {variance} | {prob2:.0f}% | {prob3:.0f}% | {status_str} |")
+        lines.append(f"| {i} | {p['player_name']} | {p['team']} | {loc} {opp} | {p['expected_shots']:.2f} | {hist_avg:.2f} | {variance} | {prob2:.0f}% | {prob3:.0f}% | {acc_str} | {status_str} |")
 
     lines.append("")
     lines.append("---")
@@ -150,16 +155,18 @@ def generate_predictions_readme(game_date: str, output_path: str = "predictions/
     # Sort by Team ascending, then P(2+) descending
     high_conf.sort(key=lambda x: (x['team'], -x['shot_probabilities'].get('2+', 0)))
     if high_conf:
-        lines.append("| Player | Team | Exp SOG | Hist Avg | Variance | P(2+) | P(3+) | Status |")
-        lines.append("|--------|------|---------|----------|----------|-------|-------|--------|")
+        lines.append("| Player | Team | Exp SOG | Hist Avg | Variance | P(2+) | P(3+) | Acc% | Status |")
+        lines.append("|--------|------|---------|----------|----------|-------|-------|------|--------|")
         for p in high_conf:
             prob2 = p['shot_probabilities'].get('2+', 0) * 100
             prob3 = p['shot_probabilities'].get('3+', 0) * 100
             hist_avg = p.get('historical_avg_shots', p['expected_shots'])
             variance = p.get('variance_indicator', 'N/A')
+            hist_acc = p.get('historical_accuracy_pct')
+            acc_str = f"{hist_acc:.0f}%" if hist_acc is not None else "-"
             status = p.get('injury_status', '')
             status_str = f"**{status}**" if status else ""
-            lines.append(f"| {p['player_name']} | {p['team']} | {p['expected_shots']:.2f} | {hist_avg:.2f} | {variance} | {prob2:.0f}% | {prob3:.0f}% | {status_str} |")
+            lines.append(f"| {p['player_name']} | {p['team']} | {p['expected_shots']:.2f} | {hist_avg:.2f} | {variance} | {prob2:.0f}% | {prob3:.0f}% | {acc_str} | {status_str} |")
     else:
         lines.append("*No players with >70% probability for 2+ shots.*")
 
@@ -284,6 +291,7 @@ def generate_predictions_readme(game_date: str, output_path: str = "predictions/
     lines.append("- **Variance**: How prediction compares to historical average")
     lines.append("- **P(2+)**: Probability of 2 or more shots")
     lines.append("- **P(3+)**: Probability of 3 or more shots")
+    lines.append("- **Acc%**: Historical prediction accuracy for this player (last 10 days)")
     lines.append("- **Status**: Injury status (blank = healthy)")
     lines.append("")
     lines.append("### Variance Indicators")
